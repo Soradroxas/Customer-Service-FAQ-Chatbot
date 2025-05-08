@@ -1,0 +1,22 @@
+[
+    {
+        "intent": "greeting",
+        "patterns": ["hello", "hi", "good morning", "good evening"],
+        "response": "Hello! How can I assist you today?"
+    },
+    {
+        "intent": "hours",
+        "patterns": ["opening hours", "when are you open", "working hours"],
+        "response": "Our working hours are 9am to 5pm, Monday to Friday."
+    },
+    {
+        "intent": "location",
+        "patterns": ["where are you located", "address", "location"],
+        "response": "We are located at 123 Main Street, Hometown."
+    },
+    {
+        "intent": "goodbye",
+        "patterns": ["bye", "goodbye", "see you"],
+        "response": "Goodbye! Have a great day!"
+    }
+]
