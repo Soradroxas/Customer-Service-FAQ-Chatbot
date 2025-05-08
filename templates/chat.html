@@ -34,7 +34,18 @@
     const userInput = document.getElementById('user-input')
     const sendBtn = document.getElementById('send-btn')
 
-    sendBtn.addEventListener('click', () => {})
+    sendBtn.addEventListener('click', () => {
+      const message = userInput.value
+      if (message) {
+        
+        const userMessage = document.createElement('div')
+        userMessage.className = 'user-message'
+        userMessage.textContent = 'You:' + message
+        chatBox.appendChild(userMessage)
+
+        
+      }
+    })
   </script>
   <footer>
     <p>&copy; 2025 Developed by Eduardo Morales</p>
