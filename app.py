@@ -2,11 +2,8 @@ from flask import Flask, render_template, request, jsonify
 import json
 import nltk
 from  nltk.tokenize import word_tokenize
-from flask_cors import CORS
 
 app = Flask(__name__)
-
-CORS(app)
 
 nltk.download('punkt_tab')
 
@@ -35,4 +32,4 @@ def chat():
     return jsonify({'response': response})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
