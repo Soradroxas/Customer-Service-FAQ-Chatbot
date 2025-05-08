@@ -26,8 +26,8 @@ A simple and interactive chatbot designed to assist customers by answering frequ
 
 1. ### Clone the repo:
     ```sh
-    git clone https://github.com/Eduardo-J-Morales/Book-Management-System.git
-    cd Book-Management-System
+    git clone https://github.com/Eduardo-J-Morales/Customer-Service-FAQ-Chatbot.git
+    cd Customer-Service-FAQ-Chatbot
      ```
     
 2. ### Install dependencies:
