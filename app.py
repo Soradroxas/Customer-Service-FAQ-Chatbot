@@ -13,4 +13,8 @@ with open('knowledge.json') as f:
 def recognize_intent(user_input):
     tokens = word_tokenize(user_input.lower())
     for item in knowledge:
-        for pattern in item['patterns']:
+        for patter in item['patterns']:
+            pattern_tokens = word_tokenize(patter.lower())
+            if set(pattern_tokens).intersection(tokens):
+                return item['intent']
+    return "Sorry, I don't understand your question. Can you rephrase it?"
