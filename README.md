@@ -2,9 +2,8 @@
 
 A simple and interactive chatbot designed to assist customers by answering frequently asked questions. This chatbot uses natural language processing to recognize user intents and provide relevant responses. It is built with Flask for the backend, a JSON-based knowledge base for intents and responses, and a user-friendly HTML interface for interaction.
 
-> ⚡ **Note:** There is an explanation to install this API below for developers, however you don't need to install anything to try this API!  
-> An online demo is available here: [Live API Deployment](https://books-management-api-6389.onrender.com)
-> (See below for usage instructions and example requests.)
+> ⚡ **Note:** There is an explanation to install this Web App below for developers, however you don't need to install anything to try this Web App!  
+> An online demo is available here: [Live Web App Deployment](https://customer-service-faq-chatbot-production.up.railway.app)
 
 ## Features 
 
