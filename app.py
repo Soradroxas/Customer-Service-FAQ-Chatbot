@@ -2,10 +2,13 @@ from flask import Flask, render_template, request, jsonify
 import json
 import nltk
 from  nltk.tokenize import word_tokenize
-
-nltk.download('punkt')
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app)
+
+nltk.download('punkt_tab')
 
 with open('knowledge.json') as f:
     knowledge = json.load(f)
@@ -27,6 +30,8 @@ def index():
 def chat():
     user_input = request.json.get('message')
     response = recognize_intent(user_input)
+    print(f"User: {user_input}")
+    print(f"Bot: {response}")
     return jsonify({'response': response})
 
 if __name__ == '__main__':
